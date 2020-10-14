@@ -1,17 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// 入口文件
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// 引入核心组件
+import './pages/App'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// 引入初始化样式 Normalize.css http://necolas.github.io/normalize.css/
+// Normalize 一种现代的HTML5替代CSS重置方法
+// 使浏览器更一致地渲染所有元素，并符合现代标准。它只针对需要规范化的样式。
+import 'normalize.css'
+
+// 引入全局样式
+import './assets/styles/core.less'
