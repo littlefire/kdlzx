@@ -1,0 +1,108 @@
+@import './global.less';
+.home-page{
+    background-color: #fff;
+    .home-sub-list{
+            color: #5f5757;
+          
+        h3,p{
+            margin: 0;
+            padding: 0;
+            color: #5f5757;
+        }
+        padding: 0 15px 0;
+        border-top: 1px solid #ddd;
+    
+        .list-header{
+            padding: 15px 0 6px;
+            font-size:20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .list-item{
+            border-bottom: 1px solid #ddd;
+            padding: 12px 0;
+        }
+    
+        .list-item-left{
+            width: 80px;
+            flex:0 1 auto;  
+            margin-right: 5px;
+
+            img{
+                width: 80px;
+                display: block;
+            }
+        }
+        
+        h3{
+            font-size: 16px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;    /*表示文本超出时候用 “...” 来代替*/
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+        }
+        p{
+            line-height: 1.666em;
+            overflow: hidden;
+            text-overflow: ellipsis;    /*表示文本超出时候用 “...” 来代替*/
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+       
+    }
+
+    .tab{
+        // .am-tabs-tab-bar-wrap .am-tabs-default-bar-tab{
+        //     font-size: 18px;
+        // }
+        .am-tabs-default-bar-tab-active{
+            color:@base-color;
+        }
+        .am-tabs-default-bar-tab{
+            font-size:18px;
+        }
+        .am-tabs-default-bar-underline{
+            border-color:@base-color;
+        }
+        .home-tab-item{
+            margin: 10px 15px 5px;
+            .home-tab-item-left{
+                flex:0 1 auto;
+                width: 120px;
+                img{
+                    width: 120px;
+                    display: block;
+                }
+            }    
+    
+            .home-tab-item-right{
+                h3{
+                    font-size:16px;
+                    line-height:1.4em;
+                    margin-top: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+                .txt_info{
+                    color:#ccc;
+                    .right{
+                        float: right;
+                    }
+                    i{
+                        margin-right: 6px;
+                    }
+                    span{
+                        color:#aaa;
+                    }
+                }
+                
+            }
+        }
+    }
+}

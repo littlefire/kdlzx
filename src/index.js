@@ -10,3 +10,6 @@ import 'normalize.css'
 
 // 引入全局样式
 import './assets/styles/core.less'
+
+//引入Ant-Mobile 样式
+import 'antd-mobile/dist/antd-mobile.css'
